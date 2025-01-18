@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  
+  // Методи рядків
+  
+  // Щоб отримати довжину рядка, використовується властивість length:
+  const message = "JavaScript is awesome";
+  console.log(message.length); // 21
+  
+  // Методи
+  // Методи — це дії, які можна виконати із сутністю, такі як додати цукор чи підігріти. У програмуванні дані також заздалегідь мають певні методи, які дозволяють виконувати різні операції, наприклад, перетворення рядка в різний регістр.
+  // Виклик методу дуже схожий на доступ до властивості, але наприкінці додаються круглі дужки, як при виклику функції:
+  
+  // Ось приклад використання (виклику) методу toUpperCase() для перетворення рядка у верхній регістр:
+  const message = "JavaScript is awesome";
+  console.log(message.toUpperCase()); // "JAVASCRIPT IS AWESOME"
+  
+  // Метод slice()
+  // Метод slice() використовується для створення копії частини або всього рядка без зміни оригінального рядка. Він дозволяє витягувати підрядок з вихідного рядка, вказуючи початковий та кінцевий індекси.
+  // Метод slice() копіює підрядок із вихідного рядка, починаючи з індексу startIndex і до (не включаючи) індексу endIndex, і повертає цю копію як новий рядок.
+  
+  const fullName = "Jacob Mercer";
+  console.log(fullName.slice(0, 4)); // 'Jaco'
+  console.log(fullName.slice(3, 9)); // 'ob Mer'
+  console.log(fullName.slice(0, fullName.length)); // 'Jacob Mercer'
+  
+  // Методи toLowerCase() і toUpperCase()
+  // Методи рядків toLowerCase() та toUpperCase() використовуються для зміни регістру символів у рядку. Обидва методи не змінюють вихідний рядок, а повертають новий рядок у відповідному регістрі.
+  // Метод toLowerCase() повертає новий рядок, у якому всі символи вихідного рядка перетворені в нижній регістр.
+  
+  const message = "Welcome to Bahamas!";
+  console.log(message.toLowerCase()); // "welcome to bahamas!"
+  console.log(message); // "Welcome to Bahamas!"
+  
+  const message = "Welcome to Bahamas!";
+  console.log(message.toUpperCase()); // "WELCOME TO BAHAMAS!"
+  console.log(message); // "Welcome to Bahamas!"
+  
+  // Метод includes()
+  // Метод рядків includes() використовується для перевірки наявності підрядка у рядку. Він повертає логічне значення true, якщо підрядок знайдено, і false, якщо підрядок відсутній.
+  // Регістр символів у рядку й підрядку має значення. Літера a, наприклад, не дорівнює літері A.
+  
+  const username = 'Jacob Mercer';
+  console.log(username.includes('Jacob')); // true
+  console.log(username.includes('John')); // false
+  console.log(username.includes('Mercer')); // true
+  console.log(username.includes('Doe')); // false
+  
+  // Методи startsWith() і endsWith()
+  // Методи startsWith() і endsWith() призначені для перевірки початку й закінчення рядка відповідно. Вони повертають булеве значення true або false, залежно від того, чи відповідає початок або кінець рядка заданому значенню.
+    
+  // Метод startsWith()
+  // Метод startsWith() перевіряє, чи починається рядок із зазначеного підрядка.
+  const str = "Hello, world!";
+  console.log(str.startsWith("Hello")); // true
+  console.log(str.startsWith("hello")); // false (метод чутливий до регістру)
+  
+  // Метод endsWith()
+  // Метод endsWith() перевіряє, чи закінчується рядок вказаним підрядком.
+  
+  const str = "Hello, world!";
+  console.log(str.endsWith("world!")); // true
+  console.log(str.endsWith("World!")); // false (метод чутливий до регістру)
+  
+  // Зверни увагу!
+  // Обидва методи чутливі до регістру символів. Це означає, що під час порівняння підрядка з вихідним рядком регістр символів має збігатися. Якщо в ці методи не передати аргумент, то він повертає false.
+  
+  // Метод indexOf()
+  // Метод indexOf() використовується для пошуку першого входження підрядка в рядок. Він повертає:
+  // індекс першого входження (індекс першого символу) підрядка, якщо він знайдений або
+  // -1, якщо підрядок не виявлено
+  
+  const message = "Welcome to Bahamas!";
+  const index = message.indexOf("to");
+  console.log(index); // 8
+  
+  // Метод trim()
+  // Метод trim() використовується для видалення початкових і кінцевих пробілів із рядка.
+  const input = " JavaScript is awesome!    ";
+  const trimmedInput = input.trim();
+  console.log(trimmedInput); // "JavaScript is awesome!"
+  console.log(input); // " JavaScript is awesome!    "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

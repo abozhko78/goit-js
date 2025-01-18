@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  
+  // Логічні оператори
+  
+  // Запам’ятай 6 випадків, які приводяться до false:
+  // 1. 0
+  // 2. ""
+  // 3. Nan
+  // 4. null
+  // 5. underfined
+  // 6. false
+  
+  // console.log(Boolean(true)); // true
+  // console.log(Boolean(false)); // false
+  
+  // console.log(Boolean(NaN)); // false
+  // console.log(Boolean(null)); // false
+  // console.log(Boolean(undefined)); // false
+  // console.log(Boolean(0)); // false
+  // console.log(Boolean(3.14)); // true
+  // console.log(Boolean(-10)); // true
+  
+  
+  // Логічне «І»
+  // Логічні оператори використовуються для перевірки умов з кількома виразами, наприклад, в інструкції if.
+  // Оператор "І" (&&) наводить усі операнди до логічного типу (true або false) і повертає значення одного з них. Дозволяє перевірити, чи виконані всі умови у виразі.
+  
+  console.log("hello" && 5); // 5
+  console.log(5 && "hello"); // "hello"
+
+  console.log("mango" && "poly"); // "poly"
+  console.log("poly" && "mango"); // "mango"
+
+  console.log(3 && true); // true
+  console.log(true && 3); // 3
+  
+  console.log("hello" && 0); // 0
+  console.log(0 && "hello"); // 0
+
+  console.log(3 && false); // false
+  console.log(false && 3); // false
+
+  console.log(0 && ""); // 0
+  console.log("" && 0); // ""
+  
+  // Варто зазначити, що якщо операндами є вирази, то спочатку вони обчислюються, а потім їх результати будуть порівнюватися оператором &&.
+  
+  const a = 20;
+  console.log(a > 10 && a < 30); // true && true -> true
+  
+  const b = 50;
+  console.log(b > 10 && b < 30); // true && false -> false
+  console.log(b > 80 && b < 120); // false && true -> false
+  
+  
+  // Логічне «АБО»
+  // Оператор "АБО" (||) перетворює всі операнди до логічного типу (true або false) і повертає значення одного з них.
+  // Дозволяє перевіряти, чи є хоча б один із операндів "істинним”.
+  // Обчислення оператора відбувається зліва направо.
+  
+  console.log(true || false); // true
+  console.log(false || true); // true
+  
+  console.log(5 || false); // 5
+  console.log(false || 5); // 5
+  
+  console.log("hello" || 0); // "hello"
+  console.log(0 || "hello"); // "hello"
+  
+  console.log(5 || 3); // 5
+  console.log(3 || 5); // 3
+  
+  console.log("mango" || "poly"); // "mango"
+  console.log("poly" || "mango"); // "poly"
+  
+  // Логічне «НІ»
+  // Усі оператори, які ми розглядали раніше, були бінарними. Бінарні оператори містять два операнди: лівий і правий.
+  // Логічне «НІ» (!) — це унарний оператор — він виконує операцію над одним операндом праворуч.
+  
+  console.log(!true); // false
+  console.log(!false); // true
+  console.log(!3); // !3 -> !true -> false
+  console.log(!"Mango"); // !"Mango" -> !true -> false
+  console.log(!0); // !0 -> !false -> true
+  console.log(!""); // !"" -> !false -> true
+  console.log(!null); // !null -> !false -> true
+  
+  const isBlocked = false;
+  const canChat = !isBlocked; // !false -> true
+  
+  if(canChat) {
+    console.log("Can type in chat!")
+  } else {
+    console.log("Blocked from typing in chat!")
+  }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
